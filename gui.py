@@ -171,6 +171,8 @@ Arrival Time: {booking[5]}
     hotel_booking_btn.pack()
     booking_history_btn = ctk.CTkButton(leftframe, text="Booking History", command=lambda: booking_history.showframe())
     booking_history_btn.pack()
+    show_button = ctk.CTkButton(leftframe, text="Show", command=show_all_details)
+    show_button.pack(pady=10)
 
     # Centerframe pages
     welcomepage = centerframe()
